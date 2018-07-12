@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Ibrahim Olayioye" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+	<title>EKOBITS FORM</title>
+</head>
+
+<body>
+
+<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h2 class="text-center">Ekobits Task</h2>
+                
+                    <form  id="frmCtnt" name="frmCtnt" onsubmit="getFormReponseSubmit(getFormResponseDiv); return false;">
+                    
+                        <div class="form-group">
+							<label for="fname" class="cols-sm-2 control-label">First Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="	fa fa-file-text fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" id="fname"  name="fname" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" />
+								</div>
+							</div>
+						</div>
+                        <div class="form-group">
+							<label for="lname" class="cols-sm-2 control-label">Last Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="	fa fa-file-text fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" id="lname"  name="lname" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" />
+								</div>
+							</div>
+						</div>
+                        <div class="form-group">
+							<label for="mobile" class="cols-sm-2 control-label">Phone Number</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="	fa fa-file-text fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="mobile" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" id="mobile" />
+								</div>
+							</div>
+						</div>
+                        <div class="form-group">
+							<label for="date" class="cols-sm-2 control-label">Date of Birth</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="	fa fa-file-text fa" aria-hidden="true"></i></span>
+									<input type="date" class="form-control" name="dob" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" id="dob" />
+								</div>
+							</div>
+						</div>
+                        <div class="form-group">
+							<label for="address" class="cols-sm-2 control-label">Address</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="	fa fa-file-text fa" aria-hidden="true"></i></span>
+									<textarea class="form-control" id="address" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" name="address"></textarea>
+								</div>
+							</div>
+						</div>
+                        <div class="form-group">
+							<div class="cols-sm-10">
+									<input class="btn btn-capsul btn-aqua" type="submit" value="Submit"/>
+								</div>
+                                <div  class="form-group" style=" cursor: none; text-align: center; margin-left: 0px; width: 800px;float: right;
+                                        background-color: white; border-radius: 5px; color: red;size: 25px; font-size: large;" id="getFormResponseDiv"></div>
+							</div>
+						</div>
+                    
+                    </form>
+                </div>
+            </div>
+
+<script src="js/form_script.js" ></script> 
+</body>
+</html>

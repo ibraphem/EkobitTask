@@ -1,4 +1,4 @@
-
+/* function for age difference */
             var minAge = 14;
             var maxAge = 25;
             var today = new Date()
@@ -34,7 +34,7 @@
             }
         }
             
-            
+            /* Form Validation */
             
         function frmValidate()
             {
@@ -92,29 +92,17 @@
             		return false;
             	}
                 
-            /*	if(document.frmCtnt.course_period.value=="" || document.frmCtnt.course_period.value=="none")
-            	{
-            		alert("Please select your prefered course period \n Weekdays or Weekends ?");
-            		document.frmCtnt.course_period.focus();
-            		return false;
-            	}
-            	
-                if(document.frmCtnt.gender.value == "" || document.frmCtnt.gender.value == "null")
-            	{   
-            		alert("Please select your gender option ?");
-            		document.frmCtnt.gender.focus();
-            		return false;
-            	}*/
                 
             	return true;
-            }//gender
+            }
             
             
-            function getFormReponseSubmit(getFormResponseDiv)
+        function getFormReponseSubmit(getFormResponseDiv)
             {
+                
             if(frmValidate()==true)
             {
-            /*URL="?name="+document.frmCtnt.name.value+"&email="+document.frmCtnt.email.value+"&mobile="+document.frmCtnt.mobile.value+"&course_period="+document.frmCtnt.course_period.value+"&gender="+document.frmCtnt.gender.value+"&comment="+document.frmCtnt.comment.value;*/
+           
             URL="?fname="+document.frmCtnt.fname.value+"&lname="+document.frmCtnt.lname.value+"&mobile="+document.frmCtnt.mobile.value+"&dob="+document.frmCtnt.dob.value+"&address="+document.frmCtnt.address.value;
             if (window.XMLHttpRequest){xmlhttp=new XMLHttpRequest();}else{xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");}
             xmlhttp.onreadystatechange=function(){if (xmlhttp.readyState==4 && xmlhttp.status==200){	
@@ -131,4 +119,3 @@
             xmlhttp.open("POST","http://localhost/ekobitTask/save_data.php"+URL,true);
             xmlhttp.send();
             }}
-            //http://localhost/training/?name=Raheem+Yaqub&email=yaqub.adesola%40gmail.com&mobile=08074544422&course_period=weekdays&comment=Please+tell+us+your+expectation+on+this+programme.
